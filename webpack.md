@@ -64,5 +64,14 @@ module.exports = {
   ]
 }
 ```
+- file-loader打包字体文件
+```js
+{
+  test: /\.(eot|ttf|svg)$/,
+  use: {
+    loader: 'file-loader'
+  } 
+}
+```
 
 
