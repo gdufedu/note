@@ -73,5 +73,37 @@ module.exports = {
   } 
 }
 ```
+- html-webpack-plugin插件打包html文件
+```js
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path');
+
+var webpackConfig = {
+  entry: 'index.js',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'index_bundle.js'
+  },
+  plugins: [new HtmlWebpackPlugin()]
+};
+```
+> htmlWebpackPlugin会在打包后自动生成一个index.html文件，把打包生成的js文件自动引入这个html文件中
+
+- clean-webpack-plugin在我们执行npm run bundle打包时，先自动删除dist目录，再产生新的dist打包目录
+```js
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+var path = require('path');
+
+var webpackConfig = {
+  entry: 'index.js',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'index_bundle.js'
+  },
+  plugins: [new CleanWebpackPlugin()]
+};
+```
+
+## Entry 与 Output 的基础配置
 
 
