@@ -104,6 +104,11 @@ var webpackConfig = {
 };
 ```
 
-## Entry 与 Output 的基础配置
+## SourceMap的配置
+> 若知道dist目录main.js的96行出错，sourceMap是一个映射关系，它知道dist目录main.js的96行对应的src目录的index.js的第一行，当前是index.js第一行出错
+```js
+devtool: 'source-map'
+```
+> inline-source-map也可以实现source-map效果，控制台告知第几行第几列出错，cheap-inline-source-map只告知第几行出错，inline-source-map和cheap-inline-source-map会打包映射关系到main.js文件
 
 
