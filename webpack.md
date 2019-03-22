@@ -111,4 +111,28 @@ devtool: 'source-map'
 ```
 > inline-source-map也可以实现source-map效果，控制台告知第几行第几列出错，cheap-inline-source-map只告知第几行出错，inline-source-map和cheap-inline-source-map会打包映射关系到main.js文件
 
+## watch
+> package.json配置--watch参数后运行npm run watch可以自动打包，手动刷新浏览器可见效果
+```js
+"scripts": {
+    "watch": "webpack --watch"
+  },
+```
+
+## webapck-dev-server是webapck的热加载，配置前npm i webapck-dev-server
+- 配置服务器根目录
+
+```js
+devServer: {
+	contentBase: "./dist"
+},
+```
+
+- 配置package.json
+```js
+"scripts": {
+  "watch": "webpack --watch",
+  "start": "webpack-dev-server"
+},
+```
 
