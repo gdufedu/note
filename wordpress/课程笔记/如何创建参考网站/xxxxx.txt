@@ -1,0 +1,17 @@
+/*更改options表中的siteurl和home对应的值*/
+UPDATE book_options SET option_value = replace(option_value, 'http://www.lingfengkeji.com/demo/book', 'http://localhost/yanshiduoben') WHERE option_name = 'siteurl' OR option_name = 'home';
+
+/*更改posts表中的guid字段的值*/
+UPDATE book_posts SET guid = replace(guid, 'http://www.lingfengkeji.com/demo/book', 'http://localhost/yanshiduoben');
+
+/*更改posts表中的post_content字段的值*/
+UPDATE book_posts SET post_content = replace(post_content, 'http://www.lingfengkeji.com/demo/book', 'http://localhost/yanshiduoben');
+
+/*更改posts表中的pinged字段的值*/
+UPDATE book_posts SET pinged = replace(pinged, 'http://www.lingfengkeji.com/demo/book', 'http://localhost/yanshiduoben');
+
+/*更改comments表中的comment_author_url字段的值*/
+UPDATE book_comments SET comment_author_url = replace(comment_author_url, 'http://www.lingfengkeji.com/demo/book', 'http://localhost/yanshiduoben');
+
+/*更改comments表中的comment_content字段的值*/
+UPDATE book_comments SET comment_content = replace(comment_content, 'http://www.lingfengkeji.com/demo/book', 'http://localhost/yanshiduoben');

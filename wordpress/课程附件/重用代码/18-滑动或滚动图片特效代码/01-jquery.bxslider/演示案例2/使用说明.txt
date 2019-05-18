@@ -1,0 +1,20 @@
+使用bxslider特效的步骤：
+
+步骤一：将原始文件中的images目录、jquery.bxslider.min.js文件以及jquery.bxslider.css文件拷贝并粘贴到你网站的目录。
+
+步骤二：在网站目录中创建js目录，将jquery.bxslider.min.js文件放置到此目录。并且在互联网上下载juquery代码（版本要大于1.8）,同样放置在js目录中。
+
+步骤三：在你需要使用bxslider功能的网页中，引入js文件（jquery和jquery.bxslider.min.js）、引入css文件（将jquery.bxslider.css文件中的css代码复制粘贴到你的主css文件中，比如style.css）
+
+
+步骤四：在你想要使用bxslider功能的网页中，用特定的HTML结构引入图片，代码如下：
+
+<ul class="bxslider">
+  <li><img src="/images/pic1.jpg" /></li>
+  <li><img src="/images/pic2.jpg" /></li>
+  <li><img src="/images/pic3.jpg" /></li>
+  <li><img src="/images/pic4.jpg" /></li>
+</ul>
+
+
+步骤五：到演示案例1中的js目录下，将dobxslider.js文件复制并粘贴到你的js目录下。

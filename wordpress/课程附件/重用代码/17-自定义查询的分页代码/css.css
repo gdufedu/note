@@ -1,0 +1,4 @@
+.fenye{width:98%;height:36px;padding-top: 15px;margin-bottom:20px;text-align:center;line-height:36px;border-top: 1px solid #E8E8E8;}
+.fenye a{padding:4px 6px 4px 6px;margin:0 2px 0 2px;border:1px solid #aaa;text-decoration:none;color:#333;}
+.fenye a.current{	background:#0071AD;color:#fff;}
+.fenye a:hover{background:#0071AD;color:#fff;}

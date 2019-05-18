@@ -1,0 +1,3 @@
+将文件夹中的“searcheform.php”直接复制到你的模版文件中即可。
+
+searchform.php 文件是你网站搜索框的代码文件。
